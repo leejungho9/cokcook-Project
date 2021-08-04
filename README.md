@@ -44,11 +44,11 @@
   * 모든 값을 정확하게 입력해야 레시피 등록 가능
 <hr>
 
-<img width="600" src ="https://user-images.githubusercontent.com/73329610/127976877-28bc7642-c581-4fc9-8821-58858b6d2363.png" width="50%" height="50%"><img src ="https://user-images.githubusercontent.com/73329610/127976609-e0288243-c94a-455a-9c74-b7dc77d02d83.png" width="50%" height="50%">
+<img width="480" src ="https://user-images.githubusercontent.com/73329610/127976877-28bc7642-c581-4fc9-8821-58858b6d2363.png" ><img width="480"  src ="https://user-images.githubusercontent.com/73329610/127976609-e0288243-c94a-455a-9c74-b7dc77d02d83.png">
 
 * 관리자 통계관리 - 설문조사 통계 페이지
- * 사용자가 설문조사를 작성하면 DB에 저장되고 , 설문조사를 구글 차트 API를 이용하여 집계처리
- * 설문조사를 통해 사용자들의 식습관과 사이트에 대한 만족도를 파악하여 사이트를 및 컨텐츠를 개선 가능
+  * 사용자가 설문조사를 작성하면 DB에 저장되고 , 설문조사를 구글 차트 API를 이용하여 집계처리
+  * 설문조사를 통해 사용자들의 식습관과 사이트에 대한 만족도를 파악하여 사이트를 및 컨텐츠를 개선 가능
 
 <hr>  
 
