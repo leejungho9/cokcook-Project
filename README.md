@@ -1,13 +1,20 @@
-# 콕콕! 쿡쿡!
+# 콕콕 쿡쿡 :  레시피 추천 및 공유 사이트
 
-## 개요 : 레시피 커뮤니티 사이트 
+## 개발 배경 및 개발 목적
+구글 검색어 트랜드를 조회한 결과 코로나로 인한 상황적 요인으로 집에서 요리하는 빈도 수가 높아지면서 레시피에 대한 관심도가 지속적으로 증가한 것을 확인할 있었으며 교보문고의 제공한 정보에 따르면 레시피를 담은 요리책이 올해 1월부터 5월까지 요리책 판매량이 지난해 같은 기간에 비해 18.9% 증가했다는 것을 알 수 있었다. 이를 바탕으로 레시피에 대한 관심이 지속적으로 증가하는 상황 속에서 여러 사람들과 다양한 레시피를 공유할 수 있게 하는 것이 콕콕 쿡쿡의 개발 목적이다.
 
-+ 전국의 특산물과 관련하여 사용자들끼리 레시피를 공유하고 이를 통해 지역 특산물 소비 촉진을 장려
-+ 사용자들이 실제로 가지고 있는 재료들에 맞게 레시피들을 제공해주는 큐레이션 기능을 통해 재료 구비에 대한 부담을 덜어줌
-+ 사용자들에 대한 설문조사를 진행하여 사용자들의 식생활에 대한 정보를 얻고 사용자들에게 서비스를 제공할 때 이를 활용
+## 차별성
++ 전국 팔도의 특산물를 재료로 추가하여 지역 특산물의 소비 촉진을 장려함
++ 사용자들이 가지고 있는 재료를 선택하여 이에 맞는 레시피를 제공하는 큐레이션 기능을 통해 재료구비에 대한 부담을 덜어줌
++ 사용자들에 대한 설문조사를 진행하여 사용자들의 식생활 및 사이트 만족도에 대한 정보를 얻을 수 있음
 
 ## 사용기술 및 개발 환경
-<img src="https://img.shields.io/badge/JAVA-007396?style=for-the-badge&logo=java&logoColor=white"> <img src="https://img.shields.io/badge/Spring-6DB33F?style=for-the-badge&logo=Spring&logoColor=white"> <img src="https://img.shields.io/badge/oracle-F80000?style=for-the-badge&logo=oracle&logoColor=white"><img src="https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"> <img src="https://img.shields.io/badge/jquery-0769AD?style=for-the-badge&logo=jquery&logoColor=white"><img src="https://img.shields.io/badge/html-E34F26?style=for-the-badge&logo=html5&logoColor=white"> <img src="https://img.shields.io/badge/css-1572B6?style=for-the-badge&logo=css3&logoColor=white"> <img src="https://img.shields.io/badge/bootstrap-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white"> <img src="https://img.shields.io/badge/github-181717?style=for-the-badge&logo=github&logoColor=white">  <img src="https://img.shields.io/badge/apache tomcat-F8DC75?style=for-the-badge&logo=apachetomcat&logoColor=white">
+
++ Front-end : <img src="https://img.shields.io/badge/html-E34F26?style=for-the-badge&logo=html5&logoColor=white"> <img src="https://img.shields.io/badge/css-1572B6?style=for-the-badge&logo=css3&logoColor=white"> <img src="https://img.shields.io/badge/javascript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black"> <img src="https://img.shields.io/badge/jquery-0769AD?style=for-the-badge&logo=jquery&logoColor=white"> <img src="https://img.shields.io/badge/bootstrap-7952B3?style=for-the-badge&logo=bootstrap&logoColor=white">
++ Back-end : <img src="https://img.shields.io/badge/JAVA-007396?style=for-the-badge&logo=java&logoColor=white"> <img src="https://img.shields.io/badge/Spring-6DB33F?style=for-the-badge&logo=Spring&logoColor=white">   
++ Data-base : <img src="https://img.shields.io/badge/oracle-F80000?style=for-the-badge&logo=oracle&logoColor=white">
++ Server : <img src="https://img.shields.io/badge/github-181717?style=for-the-badge&logo=github&logoColor=white">  
++ Version-control: <img src="https://img.shields.io/badge/apache tomcat-F8DC75?style=for-the-badge&logo=apachetomcat&logoColor=white">
 
 ## 구현 기능 
 
@@ -20,25 +27,30 @@
 + 관리자 페이지를 구현하여  사용자 관리, Q&A관리, 이벤트 관리 , 공지사항 관리 
 
 ## 핵심 특징
-<img src ="https://user-images.githubusercontent.com/73329610/127971641-2dd3fb6b-cca2-45a2-a027-9458d160770b.png" width="50%" height="50%">
+<img width="600" src ="https://user-images.githubusercontent.com/73329610/127971641-2dd3fb6b-cca2-45a2-a027-9458d160770b.png" >
 
-* 사이트의 메인페이지 
-  * 레시피 조회 순 별로 인기 TOP4를 보여줌 
-  * 지역 특산물을 사용한 횟수 순으로 인기 TOP4를 보여줌 
-  * 사용자들이 집에 있는 레시피 컨텐츠를 통해 ' 이 재료로 추천받기' 를 클릭하면 해당 재료에 맞게 레시피 목록을 보여줌  
+* 메인페이지 
+  * 인기 레시피 :  조회 수가 높은 순으로 네 개의 레시피를 보여줌 
+  * 특산물을 이용한 레시피 : 지역 특산물을 사용한 레시피의 최신 순으로 네 개의 레시피를 보여줌 
+  * 사용자들이 집에 있는 레시피 : 원하는 재료를 선택 후 ' 이 재료로 추천받기' 를 클릭하면 해당 재료에 맞는 레시피 목록을 보여줌  
+<hr>
 
-<img src ="https://user-images.githubusercontent.com/73329610/127974742-1663bc4d-71cd-425e-8763-941a8cf35dda.png" width="50%" height="50%">
+<img width="600"  src ="https://user-images.githubusercontent.com/73329610/127974742-1663bc4d-71cd-425e-8763-941a8cf35dda.png" >
 
-* 사용자가 해당 페이지에서 레시피를 추가할 수 있는 기능
+* 레시피 작성 페이지
+  * 사용자가 해당 페이지에서 레시피를 추가할 수 있는 기능
   * 레시피를 추가하면 메인페이지에 레시피가 노출
   * 자신이 작성한 레시피는 마이 페이지에서 확인 가능 
+  * 모든 값을 정확하게 입력해야 레시피 등록 가능
+<hr>
 
+<img width="600" src ="https://user-images.githubusercontent.com/73329610/127976877-28bc7642-c581-4fc9-8821-58858b6d2363.png" width="50%" height="50%"><img src ="https://user-images.githubusercontent.com/73329610/127976609-e0288243-c94a-455a-9c74-b7dc77d02d83.png" width="50%" height="50%">
 
-<img src ="https://user-images.githubusercontent.com/73329610/127976877-28bc7642-c581-4fc9-8821-58858b6d2363.png" width="50%" height="50%"><img src ="https://user-images.githubusercontent.com/73329610/127976609-e0288243-c94a-455a-9c74-b7dc77d02d83.png" width="50%" height="50%">
+* 관리자 통계관리 - 설문조사 통계 페이지
+ * 사용자가 설문조사를 작성하면 DB에 저장되고 , 설문조사를 구글 차트 API를 이용하여 집계처리
+ * 설문조사를 통해 사용자들의 식습관과 사이트에 대한 만족도를 파악하여 사이트를 및 컨텐츠를 개선 가능
 
-* 사용자가 설문조사를 작성하면 DB에 저장되고 , 설문조사를 구글 통계 API를 이용하여 집계처리
-* 설문조사를 통해  사용자들의 연령이나 성별과 연관시켜서 연령이나 성별에 따른 식습관이나 트렌드 파악
-  
+<hr>  
 
 ## 설계 주안점
 + 전국의 특산물 및 사용자들이 실제로 가지고 있는 재료들에 맞게 레시피를 작성/수정/ 찜 하게 하기 위하여 다음과 같은 기능을 구현 
